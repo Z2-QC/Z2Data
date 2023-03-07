@@ -20,9 +20,10 @@ public class LoginPage extends PageBase{
     @FindBy (className = "signinformsubmit")
     WebElement signInBtn;
 
-    public void userLogin(String userName, String passWord) {
+    public void userLogin(String userName, String passWord) throws InterruptedException {
         setValueToTxtField(userNameTxtBox, userName);
         setValueToTxtField(passwordTxtBox, passWord);
         clickOnButton(signInBtn);
+        Thread.sleep(5000);
     }
 }
