@@ -24,6 +24,5 @@ public class LoginPage extends PageBase{
         setValueToTxtField(userNameTxtBox, userName);
         setValueToTxtField(passwordTxtBox, passWord);
         clickOnButton(signInBtn);
-        Thread.sleep(5000);
     }
 }
