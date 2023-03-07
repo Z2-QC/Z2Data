@@ -30,6 +30,5 @@ public class PCNTest extends TestBase{
         String welcomeMsg = landingPage.getWelcomeMsgTxt();
         softAssert.assertTrue(welcomeMsg.contains("Welcome"));
         softAssert.assertAll();
-        Thread.sleep(3000);
     }
 }
